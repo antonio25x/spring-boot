@@ -1,6 +1,8 @@
 package com.springboot.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -18,7 +20,8 @@ public class HelloController {
 		return "Hola Toño from RestController!";
 	}
 	
-	@RequestMapping("/users")
+	@CrossOrigin(origins={"localhost:4200"})
+	@RequestMapping(value="/users", method=RequestMethod.GET)
 	public String[] getUsers () {
 		return USERS;
 	}
