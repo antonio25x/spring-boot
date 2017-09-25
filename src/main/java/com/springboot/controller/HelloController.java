@@ -20,7 +20,7 @@ public class HelloController {
 		return "Hola Toño from RestController!";
 	}
 	
-	@CrossOrigin(origins={"localhost:4200"})
+	@CrossOrigin(origins={"http://localhost:4200", "https://antonio25x.github.io"})
 	@RequestMapping(value="/users", method=RequestMethod.GET)
 	public String[] getUsers () {
 		return USERS;
