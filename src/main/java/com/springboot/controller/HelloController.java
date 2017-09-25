@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 	
-	private static final String[] USERS = {"Luis Antonio", "Miguel Diaz"};
+	private static final String[] USERS = {"Luis A", "Miguel D", "Billy B"};
 
 	@RequestMapping("/")
 	public String inicio () {
