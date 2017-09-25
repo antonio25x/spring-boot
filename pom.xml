@@ -39,10 +39,11 @@
 			</exclusions>
 		</dependency>
 
+		<!-- Disabling this for later implementation 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
